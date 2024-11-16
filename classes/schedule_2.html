@@ -101,8 +101,87 @@
                 text-align: left;
                 z-index: 200;
             }
-            .v98_22 {
-                width: 405px;
+            .tri2 {
+                z-index: 22;
+                top: 470px;
+                left: 10px;
+                border-left: 20px solid white;
+                border-top: 20px solid transparent;
+                border-bottom: 20px solid transparent;
+            }
+            .tri3 {
+                top: 770px;
+            }
+            .tri4 {
+                top: 840px;
+            }
+            .dropbtn {
+                    background-color: rgba(71,92,123,1);
+                    color: white;
+                    font-size: 16px;
+                    border: none;
+                    cursor: pointer;
+                    width: 200px;
+                    height: 45px;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 15px;
+                    border-radius: 5px;
+                    position: absolute;
+                    top: 167px;
+                    left: 1600px;
+                }
+
+                /* Add arrow to dropdown button */
+                .dropbtn::after {
+                    content: '\25BC';  /* Unicode for down arrow */
+                    font-size: 12px;
+                    margin-left: 10px;
+                }
+
+                /* The container <div> - needed to position the dropdown content */
+                .dropdown {
+                    display: inline-block;
+                }
+
+                /* Dropdown Content (Hidden by Default) */
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    top: 212px;
+                    left: 1600px;
+                    background-color: #f9f9f9;
+                    min-width: 200px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 1;
+                    border-radius: 5px;
+                    overflow: hidden;
+                }
+
+                /* Links inside the dropdown */
+                .dropdown-content a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                }
+
+                /* Change color of dropdown links on hover */
+                .dropdown-content a:hover {
+                    background-color: #f1f1f1;
+                }
+
+                /* Show the dropdown menu on hover */
+                .dropdown:hover .dropdown-content {
+                    display: block;
+                }
+
+                /* Change the background color of the dropdown button when the dropdown content is shown */
+                .dropdown:hover .dropbtn {
+                    background-color: rgb(47, 70, 105);
+                }
+                .v98_22 {
+                width: 700px;
                 color: rgba(0,0,0,1);
                 position: absolute;
                 top: 157px;
@@ -120,7 +199,7 @@
                 opacity: 1;
                 position: absolute;
                 top: 859px;
-                left: 927px;
+                left: 1307px;
                 border: 1px solid rgba(0,0,0,1);
                 overflow: hidden;
             }
@@ -129,7 +208,7 @@
                 color: rgba(0,0,0,1);
                 position: absolute;
                 top: 870px;
-                left: 934px;
+                left: 1314px;
                 font-family: Inter;
                 font-weight: Regular;
                 font-size: 32px;
@@ -143,7 +222,7 @@
                 opacity: 1;
                 position: absolute;
                 top: 859px;
-                left: 1146px;
+                left: 1526px;
                 border: 1px solid rgba(0,0,0,1);
                 overflow: hidden;
             }
@@ -152,7 +231,7 @@
                 color: rgba(0,0,0,1);
                 position: absolute;
                 top: 870px;
-                left: 1188px;
+                left: 1568px;
                 font-family: Inter;
                 font-weight: Regular;
                 font-size: 32px;
@@ -160,60 +239,21 @@
                 text-align: left;
             }
             .v98_30 {
-                width: 946px;
+                width: 1500px;
                 height: 593px;
-                background: url("../images/v98_30.png");
+                background: url("../images/v190.png");
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: cover;
                 opacity: 1;
                 position: absolute;
-                top: 231px;
-                left: 405px;
+                top: 251px;
+                left: 365px;
                 border: 2px solid rgba(0,0,0,1);
                 box-shadow: 0px 4px 4px rgba(0.0117647061124444, 0.125490203499794, 0.3019607961177826, 1);
                 overflow: hidden;
             }
-            .v99_4 {
-                width: 12px;
-                height: 593px;
-                background: rgba(217,217,217,1);
-                opacity: 1;
-                position: absolute;
-                top: 231px;
-                left: 1339px;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            }
-            .v99_2 {
-                width: 10px;
-                height: 237px;
-                background: rgba(71,92,123,1);
-                opacity: 1;
-                position: absolute;
-                top: 232px;
-                left: 1340px;
-                border-top-left-radius: 100px;
-                border-top-right-radius: 100px;
-                border-bottom-left-radius: 100px;
-                border-bottom-right-radius: 100px;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                overflow: hidden;
-            }
-            .tri2 {
-                z-index: 22;
-                top: 470px;
-                left: 10px;
-                border-left: 20px solid white;
-                border-top: 20px solid transparent;
-                border-bottom: 20px solid transparent;
-            }
-            .tri3 {
-                top: 770px;
-            }
-            .tri4 {
-                top: 840px;
-            }
-
+           
         </style>
     </head>
     <body>
@@ -246,10 +286,10 @@
                 <div class="v95_50">Grades</div>
             </a>
             <a href="transcripts.html">
-                <div class="v95_51"><b>Transcripts</b></div>
+                <div class="v95_51">Transcripts</div>
             </a>
             <a href="schedule.html">
-                <div class="v95_52">Schedule</div>
+                <div class="v95_52"><b>Schedule</b></div>
             </a>
             <a href="registration.html">
                 <div class="v95_53">Registration</div>
@@ -277,8 +317,15 @@
             <a href="../index.html">
                 <span class="homeNav"><b>Home</b></span>
             </a>
-            
-            <span class="v98_22">Academic Transcript</span>
+            <div class="dropdown">
+                <button class="dropbtn">Semester:</button>
+                <div class="dropdown-content">
+                  <a href="schedule_2.html">Fall 2024</a>
+                  <a href="schedule_3.html">Spring 2024</a>
+                  <a href="schedule_4.html">Fall 2023</a>
+                </div>
+            </div>
+            <span class="v98_22">Class Schedule - Fall 2024</span>
             <div class="v98_25"></div>
             <a href="">
                 <span class="v98_26">Export as...</span>
@@ -288,8 +335,5 @@
                 <span class="v98_28">Share</span>
             </a>
             <div class="v98_30"></div>
-            <div class="v99_4"></div>
-            <div class="v99_2"></div>
-        </div>
     </body>
 </html>
