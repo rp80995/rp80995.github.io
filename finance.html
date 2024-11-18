@@ -5,6 +5,35 @@
         <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
         <link href="./css/styles.css" rel="stylesheet" />
         <title>Home - ASIST</title>
+        <style>
+            .financeNav {
+                z-index: 22;
+            }
+            .healthFormsNav {
+                top: 860px;
+            }
+            .tri3 {
+                z-index: 22;
+                border-left: 20px solid white;
+                border-top: 20px solid transparent;
+                border-bottom: 20px solid transparent;
+                left: 10px;
+                top: 550px;
+            }
+            .tri4 {
+                top: 840px;
+            }
+            .v95_49 {
+            width: 314px;
+            height: 272px;
+            background: rgba(71,92,123,1);
+            opacity: 1;
+            position: absolute;
+            top: 568px;
+            left: 1px;
+            overflow: hidden;
+            }
+        </style>
     </head>
     <body>
         <!--Background-->
@@ -17,20 +46,32 @@
             <div class="circle"></div>
             <!--Information-->
             <a href="info.html">
+                <div class="tri1"></div>
+            </a>
+            <a href="info.html">
                 <span class="updateInfoNav"><b>Update Information</b></span>
                 <div class="name"></div>
             </a>
             <!--Classes-->
+            <a href="class.html">
+                <div class="tri2"></div>
+            </a>
             <a href="class.html">
                 <span class="classesNav"><b>Classes</b></span>
                 <div class="name"></div>
             </a>
             <!--Finances-->
             <a href="finance.html">
+                <div class="tri3"></div>
+            </a>
+            <a href="finance.html">
                 <span class="financeNav"><b>Finance</b></span>
                 <div class="name"></div>
             </a>
             <!--Health Forms-->
+            <a href="health.html">
+                <div class="tri4"></div>
+            </a>
             <a href="health.html">
                 <span class="healthFormsNav"><b>Health Forms</b></span>
             </a>
@@ -41,6 +82,9 @@
             <a href="index.html">
                 <span class="homeNav"><b>Home</b></span>
             </a>
+            <!--Finance Specific Nav-->
+            <div class="v95_49"></div>
+
             
         </div>
     </body>
