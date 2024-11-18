@@ -1,295 +1,205 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="https://fonts.googleapis.com/css?family=Kameron&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
-        <link href="../css/styles.css" rel="stylesheet" />
-        <title>Home - ASIST</title>
-        <style>
-            .v95_49 {
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Kameron&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <title>Transcripts - ASIST</title>
+    <link href="../images/v20_14.png" rel="icon" type="image/png" sizes="16x16" />
+    <style>
+        /* Container styles */
+        .v95_49, .v98_25, .v98_27, .v98_30, .v99_4, .v99_2 {
+            position: absolute;
+            overflow: hidden;
+        }
+        /* Background and container for different sections */
+        .v95_49 {
             width: 314px;
             height: 272px;
-            background: rgba(71,92,123,1);
-            opacity: 1;
-            position: absolute;
+            background: rgba(71, 92, 123, 1);
             top: 488px;
             left: 1px;
-            overflow: hidden;
-            }
-            .v95_50 {
-            width: 243px;
-            color: rgba(255,255,255,1);
+        }
+        /* Text styles for navigation and titles */
+        .v95_50, .v95_51, .v95_52, .v95_53, .financeNav, .healthFormsNav, .classes, .v98_22, .v98_26, .v98_28 {
+            color: rgba(255, 255, 255, 1);
+            font-family: Kameron, serif;
+            font-weight: Regular;
+            font-size: 30px;
+            opacity: 1;
+            text-align: left;
             position: absolute;
+        }
+        .v98_22, .v98_26, .v98_28 {
+            color: rgba(0, 0, 0, 1);
+        }
+        .v95_50 {
+            width: 243px;
             top: 562px;
             left: 46px;
-            font-family: Kameron;
-            font-weight: Regular;
-            font-size: 30px;
-            opacity: 1;
-            text-align: left;
-            }
-            .v95_51 {
+        }
+        .v95_51 {
             width: 98px;
-            color: rgba(255,255,255,1);
-            position: absolute;
             top: 615px;
             left: 46px;
-            font-family: Kameron;
-            font-weight: Regular;
-            font-size: 30px;
-            opacity: 1;
-            text-align: left;
-            }
-            .v95_52 {
+        }
+        .v95_52 {
             width: 153px;
-            color: rgba(255,255,255,1);
-            position: absolute;
             top: 664px;
             left: 46px;
-            font-family: Kameron;
-            font-weight: Regular;
-            font-size: 30px;
-            opacity: 1;
-            text-align: left;
-            }
-            .v95_53 {
+        }
+        .v95_53 {
             width: 125px;
-            color: rgba(255,255,255,1);
-            position: absolute;
             top: 713px;
             left: 46px;
-            font-family: Kameron;
-            font-weight: Regular;
-            font-size: 30px;
-            opacity: 1;
-            text-align: left;
-            }
-            .financeNav {
-                width: 143px;
-                color: rgba(255,255,255,1);
-                position: absolute;
-                top: 787px;
-                left: 84px;
-                font-family: Kameron;
-                font-weight: Regular;
-                font-size: 32px;
-                opacity: 1;
-                text-align: left;
-            }
-            .healthFormsNav {
-                width: 207px;
-                color: rgba(255,255,255,1);
-                position: absolute;
-                top: 856px;
-                left: 84px;
-                font-family: Kameron;
-                font-weight: Regular;
-                font-size: 32px;
-                opacity: 1;
-                text-align: left;
-            }
-            .classes {
-                width: 143px;
-                color: rgba(255,255,255,1);
-                position: absolute;
-                top: 505px;
-                left: 90px;
-                font-family: Kameron;
-                font-weight: Medium;
-                font-size: 32px;
-                opacity: 1;
-                text-align: left;
-                z-index: 200;
-            }
-            .v98_22 {
-                width: 405px;
-                color: rgba(0,0,0,1);
-                position: absolute;
-                top: 157px;
-                left: 343px;
-                font-family: Kreon;
-                font-weight: Regular;
-                font-size: 48px;
-                opacity: 1;
-                text-align: left;
-            }
-            .v98_25 {
-                width: 192px;
-                height: 58px;
-                background: rgba(217,217,217,1);
-                opacity: 1;
-                position: absolute;
-                top: 859px;
-                left: 927px;
-                border: 1px solid rgba(0,0,0,1);
-                overflow: hidden;
-            }
-            .v98_26 {
-                width: 170px;
-                color: rgba(0,0,0,1);
-                position: absolute;
-                top: 870px;
-                left: 934px;
-                font-family: Inter;
-                font-weight: Regular;
-                font-size: 32px;
-                opacity: 1;
-                text-align: left;
-            }
-            .v98_27 {
-                width: 172px;
-                height: 58px;
-                background: rgba(217,217,217,1);
-                opacity: 1;
-                position: absolute;
-                top: 859px;
-                left: 1146px;
-                border: 1px solid rgba(0,0,0,1);
-                overflow: hidden;
-            }
-            .v98_28 {
-                width: 88px;
-                color: rgba(0,0,0,1);
-                position: absolute;
-                top: 870px;
-                left: 1188px;
-                font-family: Inter;
-                font-weight: Regular;
-                font-size: 32px;
-                opacity: 1;
-                text-align: left;
-            }
-            .v98_30 {
-                width: 946px;
-                height: 593px;
-                background: url("../images/v98_30.png");
-                background-repeat: no-repeat;
-                background-position: center center;
-                background-size: cover;
-                opacity: 1;
-                position: absolute;
-                top: 231px;
-                left: 405px;
-                border: 2px solid rgba(0,0,0,1);
-                box-shadow: 0px 4px 4px rgba(0.0117647061124444, 0.125490203499794, 0.3019607961177826, 1);
-                overflow: hidden;
-            }
-            .v99_4 {
-                width: 12px;
-                height: 593px;
-                background: rgba(217,217,217,1);
-                opacity: 1;
-                position: absolute;
-                top: 231px;
-                left: 1339px;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            }
-            .v99_2 {
-                width: 10px;
-                height: 237px;
-                background: rgba(71,92,123,1);
-                opacity: 1;
-                position: absolute;
-                top: 232px;
-                left: 1340px;
-                border-top-left-radius: 100px;
-                border-top-right-radius: 100px;
-                border-bottom-left-radius: 100px;
-                border-bottom-right-radius: 100px;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                overflow: hidden;
-            }
-            .tri2 {
-                z-index: 22;
-                top: 470px;
-                left: 10px;
-                border-left: 20px solid white;
-                border-top: 20px solid transparent;
-                border-bottom: 20px solid transparent;
-            }
-            .tri3 {
-                top: 770px;
-            }
-            .tri4 {
-                top: 840px;
-            }
-
-        </style>
-    </head>
-    <body>
-        <!--Background-->
-        <div class="background">
-            <!--Left Panel-->
-            <div class="leftPanel"></div>
-            <!--Top Bar-->
-            <div class="topBar"><span class="asist">ASIST 2.0</span></div>
-            <!---->
-            <div class="circle"></div>
-            <!--Information-->
-            <a href="../info.html">
-                <div class="tri1"></div>
-            </a>
-            <a href="../info.html">
-                <span class="updateInfoNav"><b>Update Information</b></span>
-                <div class="name"></div>
-            </a>
-            <!--Classes-->
-            <a href="../class.html">
-                <div class="tri2"></div>
-            </a>
-            <a href="../class.html">
-                <span class="classes"><b>Classes</b></span>
-                <div class="name"></div>
-            </a>
-            <div class="v95_49"></div>
-            <a href="grades.html">
-                <div class="v95_50">Grades</div>
-            </a>
-            <a href="transcripts.html">
-                <div class="v95_51"><b>Transcripts</b></div>
-            </a>
-            <a href="schedule.html">
-                <div class="v95_52">Schedule</div>
-            </a>
-            <a href="registration.html">
-                <div class="v95_53">Registration</div>
-            </a>
-
-            <!--Finances-->
-            <a href="../finance.html">
-                <div class="tri3"></div>
-            </a>
-            <a href="../finance.html">
-                <span class="financeNav"><b>Finance</b></span>
-                <div class="name"></div>
-            </a>
-            <!--Health Forms-->
-            <a href="../health.html">
-                <div class="tri4"></div>
-            </a>
-            <a href="../health.html">
-                <span class="healthFormsNav"><b>Health Forms</b></span>
-            </a>
-            <!--Sparky Logo-->
-            <div class="sparkyLogo"></div>
+        }
+        .financeNav {
+            width: 143px;
+            top: 787px;
+            left: 84px;
+            font-size: 32px;
+        }
+        .healthFormsNav {
+            width: 207px;
+            top: 856px;
+            left: 84px;
+            font-size: 32px;
+        }
+        .classes {
+            width: 143px;
+            top: 505px;
+            left: 90px;
+            font-weight: Medium;
+            font-size: 32px;
+            z-index: 200;
+        }
+        .v98_22 {
+            width: 405px;
+            top: 157px;
+            left: 343px;
+            font-family: Kreon, serif;
+            font-size: 48px;
+        }
+        .v98_25 {
+            width: 192px;
+            height: 58px;
+            background: rgba(217, 217, 217, 1);
+            top: 859px;
+            left: 927px;
+            border: 1px solid rgba(0, 0, 0, 1);
+        }
+        .v98_26 {
+            width: 170px;
+            top: 870px;
+            left: 934px;
+            font-family: Inter, sans-serif;
+            font-size: 32px;
+        }
+        .v98_27 {
+            width: 172px;
+            height: 58px;
+            background: rgba(217, 217, 217, 1);
+            top: 859px;
+            left: 1146px;
+            border: 1px solid rgba(0, 0, 0, 1);
+        }
+        .v98_28 {
+            width: 88px;
+            top: 870px;
+            left: 1188px;
+            font-family: Inter, sans-serif;
+            font-size: 32px;
+        }
+        .v98_30 {
+            width: 946px;
+            height: 593px;
+            background: url("../images/v98_30.png") no-repeat center center/cover;
+            top: 231px;
+            left: 405px;
+            border: 2px solid rgba(0, 0, 0, 1);
+            box-shadow: 0px 4px 4px rgba(0.012, 0.125, 0.302, 1);
+        }
+        .v99_4 {
+            width: 12px;
+            height: 593px;
+            background: rgba(217, 217, 217, 1);
+            top: 231px;
+            left: 1339px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        .v99_2 {
+            width: 10px;
+            height: 237px;
+            background: rgba(71, 92, 123, 1);
+            top: 232px;
+            left: 1340px;
+            border-radius: 100px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        /* Triangle styles */
+        .tri2 {
+            z-index: 22;
+            left: 10px;
+            border-left: 20px solid white;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+        }
+        .tri2 { top: 470px; }
+        .tri3 { top: 770px; }
+        .tri4 { top: 840px; }
+    </style>
+</head>
+<body>
+    <!--Background-->
+    <div class="background">
+        <!--Left Panel-->
+        <div class="leftPanel"></div>
+        <!--Top Bar-->
+        <div class="topBar"><span class="asist">ASIST 2.0</span></div>
+        <!--Circle-->
+        <div class="circle"></div>
+        <!--Information-->
+        <a href="../info.html">
+            <div class="tri1"></div>
+            <span class="updateInfoNav">Update Information</span>
             <div class="name"></div>
-            <!--Home Button-->
-            <a href="../index.html">
-                <span class="homeNav"><b>Home</b></span>
-            </a>
-            
-            <span class="v98_22">Academic Transcript</span>
-            <div class="v98_25"></div>
-            <a href="">
-                <span class="v98_26">Export as...</span>
-            </a>
-            <div class="v98_27"></div>
-            <a href="">
-                <span class="v98_28">Share</span>
-            </a>
-            <div class="v98_30"></div>
-            <div class="v99_4"></div>
-            <div class="v99_2"></div>
-        </div>
-    </body>
+        </a>
+        <!--Classes-->
+        <a href="../class.html">
+            <div class="tri2"></div>
+            <span class="classes">Classes</span>
+            <div class="name"></div>
+        </a>
+        <div class="v95_49"></div>
+        <a href="grades.html"><div class="v95_50">Grades</div></a>
+        <a href="transcripts.html"><div class="v95_51"><b>Transcripts</b></div></a>
+        <a href="schedule.html"><div class="v95_52">Schedule</div></a>
+        <a href="registration.html"><div class="v95_53">Registration</div></a>
+        <!--Finances-->
+        <a href="../finance.html">
+            <div class="tri3"></div>
+            <span class="financeNav">Finance</span>
+            <div class="name"></div>
+        </a>
+        <!--Health Forms-->
+        <a href="../health.html">
+            <div class="tri4"></div>
+            <span class="healthFormsNav">Health Forms</span>
+        </a>
+        <!--Sparky Logo-->
+        <div class="sparkyLogo"></div>
+        <div class="name"></div>
+        <!--Home Button-->
+        <a href="../index.html"><span class="homeNav">Home</span></a>
+        <!--Other Elements-->
+        <span class="v98_22">Academic Transcript</span>
+        <div class="v98_25"></div>
+        <a href=""><span class="v98_26">Export as...</span></a>
+        <div class="v98_27"></div>
+        <a href=""><span class="v98_28">Share</span></a>
+        <div class="v98_30"></div>
+        <div class="v99_4"></div>
+        <div class="v99_2"></div>
+    </div>
+</body>
 </html>

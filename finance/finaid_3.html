@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Kameron&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+        <link href="../css/styles.css" rel="stylesheet" />
+        <title>Financial Aid - ASIST</title>
+        <link href="../images/v20_14.png" rel="icon" type="image/png" sizes="16x16" />
+        <style>
+            .financeNav {
+                z-index: 22;
+            }
+            .healthFormsNav {
+                top: 830px;
+            }
+            .tri3 {
+                z-index: 22;
+                border-left: 20px solid white;
+                border-top: 20px solid transparent;
+                border-bottom: 20px solid transparent;
+                left: 10px;
+                top: 550px;
+            }
+            .tri4 {
+                top: 810px;
+            }
+            .v95_49 {
+            width: 314px;
+            height: 232px;
+            background: rgba(71,92,123,1);
+            opacity: 1;
+            position: absolute;
+            top: 568px;
+            left: 1px;
+            overflow: hidden;
+            }
+            .v95_51 {
+            width: 200px;
+            color: rgba(255,255,255,1);
+            position: absolute;
+            top: 638px;
+            left: 46px;
+            font-family: Kameron;
+            font-weight: Regular;
+            font-size: 30px;
+            opacity: 1;
+            text-align: left;
+            }
+            .v95_52 {
+            width: 300px;
+            color: rgba(255,255,255,1);
+            position: absolute;
+            top: 687px;
+            left: 46px;
+            font-family: Kameron;
+            font-weight: Regular;
+            font-size: 30px;
+            opacity: 1;
+            text-align: left;
+            }
+            .v95_53 {
+            width: 145px;
+            color: rgba(255,255,255,1);
+            position: absolute;
+            top: 736px;
+            left: 46px;
+            font-family: Kameron;
+            font-weight: Regular;
+            font-size: 30px;
+            opacity: 1;
+            text-align: left;
+            }
+            .dropbtn {
+                    background-color: rgba(71,92,123,1);
+                    color: white;
+                    font-size: 16px;
+                    border: none;
+                    cursor: pointer;
+                    width: 200px;
+                    height: 45px;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 15px;
+                    border-radius: 5px;
+                    position: absolute;
+                    top: 280px;
+                    left: 1230px;
+                }
+
+                /* Add arrow to dropdown button */
+                .dropbtn::after {
+                    content: '\25BC';  /* Unicode for down arrow */
+                    font-size: 12px;
+                    margin-left: 10px;
+                }
+
+                /* The container <div> - needed to position the dropdown content */
+                .dropdown {
+                    display: inline-block;
+                }
+
+                /* Dropdown Content (Hidden by Default) */
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    top: 325px;
+                    left: 1230px;
+                    background-color: #f9f9f9;
+                    min-width: 200px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 1;
+                    border-radius: 5px;
+                    overflow: hidden;
+                }
+
+                /* Links inside the dropdown */
+                .dropdown-content a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                }
+
+                /* Change color of dropdown links on hover */
+                .dropdown-content a:hover {
+                    background-color: #f1f1f1;
+                }
+
+                /* Show the dropdown menu on hover */
+                .dropdown:hover .dropdown-content {
+                    display: block;
+                }
+
+                /* Change the background color of the dropdown button when the dropdown content is shown */
+                .dropdown:hover .dropbtn {
+                    background-color: rgb(47, 70, 105);
+                }
+                .v98_22 {
+                width: 405px;
+                color: rgba(0,0,0,1);
+                position: absolute;
+                top: 157px;
+                left: 403px;
+                font-family: Kreon;
+                font-weight: Regular;
+                font-size: 48px;
+                opacity: 1;
+                text-align: left;
+            }
+            .v186_107 {
+            width: 997px;
+            height: 242px;
+            background: url("../images/v164_192.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+            opacity: 1;
+            position: absolute;
+            top: 246px;
+            left: 377px;
+            overflow: hidden;
+            }
+            .v186_93 {
+            width: 450px;
+            color: rgba(0,0,0,1);
+            position: absolute;
+            top: 527px;
+            left: 377px;
+            font-family: Inter;
+            font-weight: Regular;
+            font-size: 32px;
+            opacity: 1;
+            text-align: left;
+            }
+            .v191_254 {
+  width: 736px;
+  height: 76px;
+  background: rgba(172,181,193,1);
+  opacity: 1;
+  position: absolute;
+  top: 495px;
+  left: 369px;
+  overflow: hidden;
+}
+.v221_41 {
+  width: 736px;
+  height: 76px;
+  background: rgba(172,181,193,1);
+  opacity: 1;
+  position: absolute;
+  top: 715px;
+  left: 370px;
+  overflow: hidden;
+}
+.v221_39 {
+  width: 736px;
+  height: 76px;
+  background: rgba(172,181,193,1);
+  opacity: 1;
+  position: absolute;
+  top: 297px;
+  left: 370px;
+  overflow: hidden;
+}
+.v191_251 {
+  width: 339px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 732px;
+  left: 411px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+.v191_258 {
+  width: 289px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 319px;
+  left: 406px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+.v191_259 {
+  width: 300px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 515px;
+  left: 406px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+.v191_261 {
+  width: 209px;
+  height: 51px;
+  background: rgba(217,217,217,1);
+  opacity: 1;
+  position: absolute;
+  top: 807px;
+  left: 878px;
+  border: 1px solid rgba(0,0,0,1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+  overflow: hidden;
+}
+.v191_262 {
+  width: 129px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 811px;
+  left: 924px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+.v221_43 {
+  width: 209px;
+  height: 51px;
+  background: rgba(217,217,217,1);
+  opacity: 1;
+  position: absolute;
+  top: 807px;
+  left: 633px;
+  border: 1px solid rgba(0,0,0,1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+  overflow: hidden;
+}
+.v221_44 {
+  width: 156px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 811px;
+  left: 660px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+.v221_51 {
+  width: 209px;
+  height: 51px;
+  background: rgba(217,217,217,1);
+  opacity: 1;
+  position: absolute;
+  top: 391px;
+  left: 878px;
+  border: 1px solid rgba(0,0,0,1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+  overflow: hidden;
+}
+.v221_52 {
+  width: 129px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 395px;
+  left: 924px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+.v221_53 {
+  width: 209px;
+  height: 51px;
+  background: rgba(217,217,217,1);
+  opacity: 1;
+  position: absolute;
+  top: 391px;
+  left: 633px;
+  border: 1px solid rgba(0,0,0,1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+  overflow: hidden;
+}
+.v221_54 {
+  width: 156px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 395px;
+  left: 660px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+.v221_46 {
+  width: 209px;
+  height: 51px;
+  background: rgba(217,217,217,1);
+  opacity: 1;
+  position: absolute;
+  top: 587px;
+  left: 878px;
+  border: 1px solid rgba(0,0,0,1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+  overflow: hidden;
+}
+.v221_47 {
+  width: 129px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 591px;
+  left: 924px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+.v221_48 {
+  width: 209px;
+  height: 51px;
+  background: rgba(217,217,217,1);
+  opacity: 1;
+  position: absolute;
+  top: 587px;
+  left: 633px;
+  border: 1px solid rgba(0,0,0,1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+  overflow: hidden;
+}
+.v221_49 {
+  width: 156px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 591px;
+  left: 660px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+.v221_37 {
+  width: 1745px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 159px;
+  left: 360px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 64px;
+  opacity: 1;
+  text-align: left;
+}
+
+        </style>
+    </head>
+    <body>
+        <!--Background-->
+        <div class="background">
+            <!--Left Panel-->
+            <div class="leftPanel"></div>
+            <!--Top Bar-->
+            <div class="topBar"><span class="asist">ASIST 2.0</span></div>
+            <!---->
+            <div class="circle"></div>
+            <!--Information-->
+            <a href="../info.html">
+                <div class="tri1"></div>
+            </a>
+            <a href="../info.html">
+                <span class="updateInfoNav">Update Information</span>
+                <div class="name"></div>
+            </a>
+            <!--Classes-->
+            <a href="../class.html">
+                <div class="tri2"></div>
+            </a>
+            <a href="../class.html">
+                <span class="classesNav">Classes</span>
+                <div class="name"></div>
+            </a>
+            <!--Finances-->
+            <a href="../finance.html">
+                <div class="tri3"></div>
+            </a>
+            <a href="../finance.html">
+                <span class="financeNav">Finance</span>
+                <div class="name"></div>
+            </a>
+            <!--Health Forms-->
+            <a href="../health.html">
+                <div class="tri4"></div>
+            </a>
+            <a href="../health.html">
+                <span class="healthFormsNav">Health Forms</span>
+            </a>
+            <!--Sparky Logo-->
+            <div class="sparkyLogo"></div>
+            <div class="name"></div>
+            <!--Home Button-->
+            <a href="../index.html">
+                <span class="homeNav">Home</span>
+            </a>
+            <!--Finance Specific Nav-->
+            <div class="v95_49"></div>
+            <a href="finaid.html">
+                <span class="v95_51"><b>Financial Aid</b></span>
+            </a>
+            <a href="finaidcheckin.html">
+                <span class="v95_52">Financial Check-In</span>
+            </a>
+            <a href="awards.html">
+                <span class="v95_53">Awards</span>
+            </a>
+            <div class="dropdown">
+                <button class="dropbtn">Semester:</button>
+                <div class="dropdown-content">
+                  <a href="finaid_2.html">Fall 2024</a>
+                  <a href="finaid_3.html">Spring 2024</a>
+                  <a href="finaid_4.html">Fall 2023</a>
+                </div>
+            </div>
+            <div class="v191_254"></div>
+            <div class="v221_41"></div>
+            <div class="v221_39"></div>
+            <span class="v191_251">Loan Change Form</span>
+            <span class="v191_258">External Aid Form</span>
+            <span class="v191_259">VTAG Application</span>
+            <div class="v191_261"></div>
+            <a href="">
+                <span class="v191_262">Upload</span>
+            </a>
+            <div class="v221_43"></div>
+            <a href="">
+                <span class="v221_44">Download</span>
+            </a>
+            <div class="v221_51"></div>
+            <a href="">
+                <span class="v221_52">Upload</span>
+            </a>
+            <div class="v221_53"></div>
+            <a href="">
+                <span class="v221_54">Download</span>
+            </a>
+            <div class="v221_46"></div>
+            <a href="">
+                <span class="v221_47">Upload</span>
+            </a>
+            <div class="v221_48"></div>
+            <a href="">
+                <span class="v221_49">Download</span>
+            </a>
+            <span class="v221_37">Financial Aid Forms - Spring 2024</span>
+        </div>
+    </body>
+</html>
